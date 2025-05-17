@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat";
+    padding: 0;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "aside main";
+}
+
+header {
+    gap: 20px;
+    display: flex;
+    background-color: #666;
+    padding: 20px;
+    height: 81px;
+    font-size: 30px;
+    color: white;
+}
+
+header img {
+    padding: 6px;
+    width: 4%;
+    height: 65px;
+    margin: 0;
+    margin-top: -8px;
+}
+
+header p {
+    padding-left: 2rem;
+    margin: 0;
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+}
+
+.container aside .icon {
+    padding: 10px;
+    gap: 10px;
+}
+
+.icon svg {
+    padding: -10px;
+}
+
+aside {
+    width: 300px;
+    background: #d9d9d9;
+    color: #ffff;
+    padding: 50px;
+    min-height: calc(100vh - 50px);
+}
+
+main {
+    grid-area: main;
+    width: 90%;
+    padding: 10px;
+}
+
+aside .icon a {
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+    margin-bottom:10px ;
+    text-decoration: none;
+}
+
+main h2 {
+    font-size: 35px;
+    margin-left: 16px;
+}
+
+main .button {
+    display: flex;
+    width: 100%;
+}
+
+main .search {
+    padding: 20px;
+}
+
+main .search button {
+    width: 100px;
+    height: 40px;
+    background: rgb(39, 158, 238);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+main .search button:hover {
+    background-color: aquamarine;
+    transform: 0.6s;
+}
+
+main .button .add {
+    width: 170px;
+    height: 2.5rem;
+    padding: 10px;
+    display: flex;
+    margin: 20px;
+    float: right;
+    gap: 30px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-left: 800px;
+    border-radius: 15px;
+    background-color: #d9d9d9;
+}
+
+main .search input {
+    font-size: 15px;
+    font-family: 'Montserrat';
+    height: 40px;
+    width: 300px;
+    margin-right: 4rem;
+    border-radius: 15px;
+}
+
+main table {
+    margin: 30px;
+    margin-left: 20px;
+    width: 73%;
+    border-collapse: collapse;
+}
+
+main th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+main th {
+    background-color: #ccc;
+}
+main .edit-btn {
+    background-color: yellow;
+    border: none;
+    padding: 5px;
+}
+main .hapus-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+}
